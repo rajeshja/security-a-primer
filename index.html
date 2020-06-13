@@ -1,47 +1,309 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background="images/aadhaar-walls.jpg">
-				</section>
-				<section data-background="images/aadhaar-walls.jpg" style="background-color:black; font-size: 2em">
-					?
-				</section>
-				<section data-background="images/aadhaar-walls.jpg" style="background-color:black; font-size: 2em">
-					Physical Security
-				</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="/custom/custom.css">
+	<style>
+		p {
+			background-color: black;
+			padding: 0 20px 10px 20px;
+		}
+
+		.large {
+			font-size: 2em;
+		}
+
+		.small {
+			font-size: 0.6em;
+		}
+
+		ul.boxes>li {
+			font-size: 0.60em;
+			float: left;
+			padding: 5px 15px 5px 15px;
+			margin: 5px 5px 15px 10px;
+			list-style: none;
+			width: 350px;
+			background-color: black;
+		}
+
+		.translucent {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+
+		.fit-image {
+			max-width: 75%;
+			max-height: 60%;
+		}
+	</style>
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="images/aadhaar-walls.jpg">
+				<div class="r-stack">
+					<p class="fragment fade-in-then-out large ">Physical Security</p>
+					<p class="fragment fade-in-then-out">
+						If an attacker gets physical access to your infrastructure,
+						it becomes easier to infiltrate your systems
+					</p>
+					<p class="fragment fade-in-then-out">
+						Physical Security is not limited to locking up your server room
+					</p>
+					<p class="fragment fade-in-then-out">
+						Or building walls
+					</p>
+					<p class="fragment fade-in-then-out">Remember Stuxnet?</p>
+					<p class="fragment fade-in-then-out">
+						Stuxnet is a worm that is believed to have been delivered to Iran's power plants via a USB
+						Drive.
+					</p>
+					<p class="fragment fade-in-then-out">
+						It reportedly ruined nearly 1/5<sup>th</sup> of Iran's Nuclear Centrifuges.
+					</p>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<p>Who does Digital Security affect?</p>
+			</section>
+			<section data-auto-animate>
+				<p style="float:left">Who does Digital Security affect?</p>
+				<ul style="float:left">
+					<li>Individuals</li>
+					<li class="fragment">Corporations</li>
+					<li class="fragment">Governments</li>
+					<li class="fragment">Armed Forces</li>
+					<li class="fragment">Judicial System</li>
+				</ul>
+			</section>
+			<section data-background="images/bodyguard.jpg">
+				<h3 class="fragment fade-in translucent">Individuals</h3>
+				<ul class="fragment fade-in boxes">
+					<li>
+						<h4>Identity Theft</h4>
+						<ul>
+							<li>Stolen Credit Cards</li>
+							<li>Taking over Social Media Accounts</li>
+							<li>Using Access/Insurance</li>
+							<li>Accepting or Paying Bribes</li>
+							<li>Paying for Drugs</li>
+							<li>Terrorist Activities</li>
+						</ul>
+					</li>
+					<li class="fragment">
+						<h4>Privacy</h4>
+						<ul>
+							<li>Home and Work address</li>
+							<li>Personal Schedules/Location</li>
+							<li>Medical Conditions</li>
+							<li>Personal/Political Views</li>
+						</ul>
+					</li>
+					<li class="fragment">
+						<h4>Personal Security</h4>
+						<ul>
+							<li>Tracking a woman's movements</li>
+							<li>Breaking into your home while you're away</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section data-background="images/superman-3-pryor.jpg">
+				<h3 class="fragment fade-in translucent">Corporations</h3>
+				<ul class="fragment fade-in boxes">
+					<li>
+						<h4>Financial</h4>
+						<ul>
+							<li>Diverting Payments</li>
+							<li>Creation of Fake Invoices</li>
+							<li>Liabilities from a Breach</li>
+						</ul>
+					</li>
+					<li class="fragment">
+						<h4>Inability to do Business</h4>
+						<ul>
+							<li>Breaches can cause systems to be shutdown</li>
+							<li>Product Prices can changed</li>
+							<li>Business users can be locked out</li>
+						</ul>
+					</li>
+					<li class="fragment">
+						<h4>Reputation</h4>
+						<ul>
+							<li>Security Breaches reduce Trust</li>
+							<li>Racist content from hacked accounts</li>
+						</ul>
+					</li>
+					<li class="fragment">
+						<h4>Confidential</h4>
+						<ul>
+							<li>Trade Secrets</li>
+							<li>Confidential Plans</li>
+							<li>Corporate Espionage</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<p style="float:left">Identity, Authentication and Authorization</p>
+				<ul class="boxes">
+					<li>
+						<h4 data-id="identity">Identity</h4>
+						<p class="fragment">Your physical identity is who you are.</p>
+						<p class="fragment">Your digital identity is a profile created for you that works with a
+							specific set of digital fora.</p>
+					</li>
+					<li class="fragment">
+						<h4>Authentication</h4>
+						<p>Authentication is used to prove your identity.</p>
+					</li>
+					<li class="fragment">
+						<h4>Authorization</h4>
+						<p>Authorization is used to define what a given actor is allowed to do.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Identity</h2>
+				<ul>
+					<li class="small">Digital Identities can belong to individuals, corporations, subdivisions, brands,
+						governments,
+						any collection of individuals, animals, fictitious characters, dieties and even places. And they
+						may be operated by individuals or collections of individuals.</li>
+					<li class="r-stack">
+						<img class="fragment" src="images/facebook-rajnikanth.png"></img>
+						<img class="fragment" src="images/facebook-publicisgroupe.png"></img>
+						<img class="fragment" src="images/twitter-netflix-india.png"></img>
+						<img class="fragment" src="images/instagram-pepsi.png"></img>
+						<img class="fragment" src="images/twitter-estonia.png"></img>
+						<img class="fragment" src="images/facebook-whitefieldrising.png"></img>
+						<img class="fragment" src="images/twitter-cow.png"></img>
+						<img class="fragment" src="images/facebook-tyrion.png"></img>
+						<img class="fragment" src="images/twitter-god.png"></img>
+						<img class="fragment" src="images/instagram-tirupati-temple.png"></img>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Authentication</h2>
+				<ul>
+					<li>Identities are authenticated using <span style="font-family: monospace;">credentials</span></li>
+					<li>
+						<ul>
+							<li>Passwords</li>
+							<li>Biometrics</li>
+							<li>Clickpoints</li>
+							<li>Cognitive</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Which authentication mechanism is the best?</h2>
+				<ul>
+					<li>A 2012 paper is considered the seminal research on this topic.</li>
+					<li>It compared 36 credential mechanisms on 25 different parameters, and essentially found that
+						passwords aren't going anywhere.</li>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2 data-id="biometrics">But Biometrics!</h2>
+			</section>
+			<section data-auto-animate>
+				<h2 data-id="biometrics">But Biometrics!</h2>
+				<div>Nope.</div>
+				<div class="fragment">If your biometrics are stolen, you can't change them. <br><br></div>
+				<h4 class="fragment">But Biometrics are part of me, so how can they be stolen?</h4>
+			</section>
+			<section data-background="images/minority-report-eyeballs.jpg">
+				<br>
+			</section>
+			<section>
+				<img src="images/biometrics-finger-stolen.jpg" />
+				<p class="fragment">I wish this was a joke</p>
+			</section>
+			<section>
+				<p>But biometric fraud need not be gruesome.</p>
+				<div>
+					<img class="fragment fit-image" src="images/biometrics-fingerprint-clone.jpg" />
+				</div>
+			</section>
+			<section>
+				<img src="images/biometrics-iris-scan.jpg" />
+			</section>
+			<section data-auto-animate>
+				<h2>How else is security compromised?</h2>
+				<ul>
+					<li>Social Engineering</li>
+					<ul>
+						<li>Phreaking</li>
+						<li>Phishing</li>
+					</ul>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2>How else is security compromised?</h2>
+				<ul>
+					<li>Interception</li>
+					<ul>
+						<li>Unencrypted Web Traffic</li>
+						<li>GSM Traffic</li>
+					</ul>
+				</ul>
+			</section>
+			<section>
+				<h2>Hashing vs Encryption</h2>
+				<ul>
+					<li class="fragment">Hashing <em>irreversibly</em> converts a string into another form.</li>
+					<li class="fragment">Encryption is <em>reversible</em>. Should be done only if you need the original value back.</li>
+					<li class="fragment">Passwords must always be hashed.</li>
+					<li class="fragment">Credit Card numbers need to be encrypted.</li>
+				</ul>
+			</section>
+			<section>
+				<h2>If passwords are hashed, why is a stolen database a problem?</h2>
+				<ul>
+					<li class="fragment">Brute Force.</li>
+					<li class="fragment">Rainbow Tables.</li>
+				</ul>
+			</section>
+			<section>
+				<h2>What is the solution?</h2>
+				<ul>
+					<li class="fragment">Passwords must be hashed with a per-user salt.</li>
+					<li class="fragment">Security can be further improved with a pepper.</li>
+				</ul>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
